@@ -51,6 +51,13 @@ $routes->group('', ['filter' => 'login'], function ($routes) {
     $routes->add('penulis', 'Penulis::index');
 
     $routes->add('pengguna', 'DataUser::index');
+
+    // WEB
+
+    $routes->add('beranda', 'Web::index');
+    $routes->add('kontak', 'Web::contact');
+    $routes->add('list', 'Web::list');
+    $routes->get('web/detail', 'Web::detail');
 });
 
 

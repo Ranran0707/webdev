@@ -24,7 +24,6 @@ class Buku extends BaseController
             'buku' => $getdata,
             'title' => 'Daftar Buku | Admin',
         ];
-
         echo view('pages/buku/index', $data);
     }
 
@@ -32,7 +31,7 @@ class Buku extends BaseController
     {
         $data =
             [
-                'title' => 'Tambah Data Buku',
+                'title' => 'Tambah Data | Admin',
             ];
 
         return view('pages/buku/create', $data);
@@ -80,7 +79,7 @@ class Buku extends BaseController
         $data = [];
         $data['buku'] =  $this->mbuku->detailbuku($id_buku);
 
-        $data['title'] = 'Detail Data Buku';
+        $data['title'] = 'Detail Buku | Admin';
 
         return view('pages/buku/detail', $data);
     }
@@ -98,7 +97,7 @@ class Buku extends BaseController
         // $books = $this->mbuku->getIdBuku($id);
         $data =
             [
-                'title' => 'Tambah Data Buku',
+                'title' => 'Edit Data | Admin',
                 'edit' => $this->mbuku->detailbuku($id)
             ];
         // dd($data);

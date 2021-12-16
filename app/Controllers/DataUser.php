@@ -7,7 +7,7 @@ class DataUser extends BaseController
     public function index()
     {
         $data = [
-            'title' => 'Dashboard | Admin'
+            'title' => 'User Detail | Admin'
         ];
 
         echo view('pages/users/index', $data);
