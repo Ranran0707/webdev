@@ -114,7 +114,7 @@ class Buku extends BaseController
         $writer = $this->request->getVar('writer');
         $publisher = $this->request->getVar('publisher');
         $year = $this->request->getVar('year');
-        $image = $this->request->getVar('image');
+        // $image = $this->request->getVar('image');
 
         $this->mbuku->save([
             'id' => $id,
@@ -124,7 +124,7 @@ class Buku extends BaseController
             'writer' => $writer,
             'publisher' => $publisher,
             'year' => $year,
-            'image' => $image
+            // 'image' => $image
         ]);
 
         return redirect()->to(base_url("buku"));

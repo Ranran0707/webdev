@@ -14,7 +14,7 @@
 
 </div>
 
-<table class="table table-hover border border-3 border-dark p-3">
+<table class="table table-hover border border-3 border-dark p-3" id="datatablesSimple">
     <thead>
         <tr class="table-secondary">
             <th scope="col">No</th>

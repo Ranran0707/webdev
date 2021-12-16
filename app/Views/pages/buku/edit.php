@@ -22,7 +22,7 @@ foreach ($edit as $old) :       ?>
     <a href="<?= base_url('buku'); ?>" class="me-4 btn btn-success">Kembali</a>
 </div>
 
-<form action="<?= base_url('public/buku/update/' . $old['id']); ?>" method="post">
+<form action="<?= base_url('buku/update/' . $old['id']); ?>" method="post">
     <?= csrf_field(); ?>
     <fieldset class="p-5">
         <legend>Form Ubah Data</legend>

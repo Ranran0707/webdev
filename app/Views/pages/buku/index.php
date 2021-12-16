@@ -16,7 +16,7 @@
     <a href="<?= base_url('buku/create'); ?>" class="btn text-decoration-none bg-success text-white">Tambah Data</a>
 </div>
 
-<table class="table table-hover border border-3 border-dark p-3">
+<table class="table table-hover border border-3 border-dark p-3" id="datatablesSimple">
     <thead>
         <tr class="table-secondary">
             <th scope="col">No</th>
